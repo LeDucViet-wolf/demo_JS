@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page>
+    <body>
+        <referenceBlock name="product.info.details">
+            <block class="Demo\Catalog\Block\SizeGuide" name="size-guide" after="-" group="detailed_info">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">size-guide</argument>
+                    <argument name="css_class" xsi:type="string">description</argument>
+                    <argument name="at_label" xsi:type="string">none</argument>
+                    <argument name="title" translate="true" xsi:type="string">Size Guide</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+        <referenceBlock name="product.info.extrahint">
+            <block name="cutoff"
+                   class="Demo\Catalog\Block\Product\View\Cutoff"
+                   template="Demo_Catalog::product/view/cutoff.phtml" />
+        </referenceBlock>
+    </body>
+</page>
